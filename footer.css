@@ -1,0 +1,95 @@
+:root {
+    --container-back: #333333e0;
+    --titleColor: #fff;
+    --pColor: #fff;
+    --containerShadow: 3px 3px 10px 2px #000000d8;
+    --lightest: #e8e8e8;
+    --lBlue: #5588a3;
+    --mBlue: #145374;
+    --dBlue: #00334e;
+}
+
+.foot {
+    background-color: var(--dBlue);
+    color: var(--lightest);
+    /* height: 6%; */
+    width: 100%;
+    
+}
+.footer-area {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+
+   
+}
+.people {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    
+    
+}
+.course {
+    /* paddin/g: 1%; */
+    margin: 5px 30%;
+    display: flex;   
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-size: 1vw;
+}
+.people > div {
+    background-color: var(--lBlue);
+    padding: 1% 15px 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.people > div p {
+    display: block;
+    font-size: 0.9em;
+}
+.people > div a {
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+#updatetime {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    padding: 3px;
+
+    background-color: var(--mBlue);
+}
+#backtotop {
+    color: #00000000;
+    background-color: #00000000;
+    font-size: 1px;
+}
+
+
+@media (max-width: 850px) {
+    .people {
+        flex-wrap: wrap;
+    }
+    .people > div {
+        width: 35%;
+    }
+    .course {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 550px) {
+    .people {
+        flex-wrap: wrap;
+    }
+    .people > div {
+        margin: 1% 10%;
+        width: 80%;
+    }
+    .course {
+        font-size: 2vw;
+    }
+
+}

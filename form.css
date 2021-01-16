@@ -1,0 +1,106 @@
+:root {
+    --form-color: #333333f0;
+
+    --input-border: #5588a3;
+    --input-focus: #e8e8e8;
+    --button-border: #e8e8e8;
+    --button-hover: #5588a3;
+}
+
+.cloud-form {
+    display: inline-block;
+    margin: 10px 20% 10px;
+    margin-right: auto;
+    width:60%;
+    
+    background-color: var(--form-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 40px;
+
+    box-shadow: 3px 3px 10px 4px #222;
+
+}
+
+.form-label {
+    display: block;
+    font-size: 3.5vw;
+    margin: 40px auto;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.form-input {
+    background: none;
+    display: block;
+    margin: 2px auto;
+    text-align: center;
+    padding: 15px 8px;
+    border: 3px solid var(--input-border);
+    width: 65%;
+    border-radius: 25px;
+    color: white;
+    font-size: 14px;
+}
+.submit-button {
+    background-color: var(--form-color);
+    border: 3px solid var(--button-border);
+    outline: none;
+    padding: 15px 20px;
+    color: white;
+
+    height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 2px solid var(--input-focus);
+    width: 75%;
+    transition: 0.25s;
+}
+.form-input:focus:placeholder {
+    color: transparent;
+}
+.submit-button:hover {
+    background-color: var(--button-hover);
+}
+
+.radio-label {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #757575;
+    padding-bottom: 20px;
+}
+.form-input > p {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #757575;
+    padding: 5px;
+}
+.radio-input {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 850px) {
+    .cloud-form {
+        margin: 5px 0;
+        width: 95%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .form-label {
+        width: 80%;
+        font-size: 6vw;
+
+    }
+    .form-input {
+        width: 80%;
+    }
+    .form-input:focus {
+        width: 90%;
+    }
+}

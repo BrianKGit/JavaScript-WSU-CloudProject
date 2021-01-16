@@ -1,0 +1,115 @@
+:root {
+    --container-back: #333333e0;
+    --titleColor: #fff;
+    --pColor: #fff;
+    --containerShadow: 3px 3px 10px 2px #000000d8;
+    --lightest: #e8e8e8;
+    --lBlue: #5588a3;
+    --mBlue: #145374;
+    --dBlue: #00334e;
+}
+html {
+    background-color: var(--dBlue);
+}
+
+.info-container {
+    display: block;
+    background-color: var(--mBlue);
+    width: 100%;
+    /* height: 100vh; */
+    padding: 0 0 5%;
+    
+}
+.card {
+    width: 90%;
+    height: 100%;
+    left: 5%;
+    margin: auto;
+    /* background-color: #fff; */
+    box-sizing: border-box;
+    
+}
+.card-title {
+    display: block;
+    background-color: var(--dBlue);
+    color: var(--lightest);
+    height: 10%;
+    padding: 20px;
+    font-size: 50px;
+    margin-bottom: 5px;
+
+    text-align: center;
+}
+.card-contents {
+    background-color: var(--lBlue);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 75%;
+    padding: 10% 5%;
+    
+}
+
+.card-image {
+    /* content: url("https://picsum.photos/400"); */
+    /* content: url("../images/cloud.png"); */
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    margin: auto;
+}
+.card-image:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+.card-p {
+    background-color: var(--mBlue);
+    color: var(--lightest);
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 350px;
+    width: 600px;
+    margin: auto;
+    font-size: 23px;
+
+    box-shadow: 3px 3px 20px 14px #83c5df;
+    /* box-shadow: 3px 3px 20px 14px #fff; */
+
+}
+
+ @media (max-width: 850px) {
+     .card {
+         width: 100%;
+     }
+    .card-title {
+        height: 5%;
+        padding: 10px;
+        font-size: 30px;
+        /* width: 100%; */
+    }
+    .card-contents {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .card-image {
+        height: 400px;
+        width: 400px;
+        padding: 1px;
+    }
+    .card-p {
+        /* height: 50vh; */
+        /* width: 400px; */
+        /* width: 100%; */
+        /* font-size: 4vw; */
+        font-size: 19px;
+    }
+    
+  } 
+  @media (max-width: 550px) {
+    .card-image {
+        height: 250px;
+        width: 250px;
+        padding: 1px;
+    }
+  }

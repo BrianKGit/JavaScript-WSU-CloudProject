@@ -1,0 +1,15 @@
+html {
+    background-color: #145374;
+}
+.success-h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.success-image {
+    display: block;
+    align-self: center;
+    content: url("../images/thumbs-up.png");
+    padding: 10px;
+    margin: 1px auto;
+}

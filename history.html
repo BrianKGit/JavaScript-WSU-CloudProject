@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cloud History, Cloud Timeline">
+    <meta name = "description" content="A brief history of cloud computing services">
+    <meta name="author" content ="Hunter Mahoney, Chris Herald, Brian Klein, Melissa Danielson">
+    <meta http-equiv="refresh" content="30">
+    
+    <title>Cloud Computing</title>
+
+    <!-- from jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- cloudflare uses their hamburger icon for navbar  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon -->
+    <link rel="icon" href="images/cloud.ico"/>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/time.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/image-banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- js  -->
+    <!-- bottom of body  -->
+
+</head>
+    
+    <body>
+        <nav></nav>
+        <main class="main-area">
+          <section class="info-container">
+            <div class="card">
+                <h3 class="card-title row">History</h3>
+                <div class="card-contents">
+                    <img class="card-image" src="images/cloud.png" alt="Cloud Image"/>
+                    <p class="card-p">The history of cloud services is a long and rich history. Without the concept and inception of these services many ideas and technologies we have today would not exisit. If you wish to read more about the history below is a short timeline. For more information please visit <a href="https://www.dataversity.net/brief-history-cloud-computing/#">here</a>. </p>
+                </div>
+             </div>
+        <div class="card">
+            <h3 class="card-title row">Time Line</h3>
+        </div>
+        <!--start of time line -->
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>1963</h2>
+                <img src ="images/DarpaLogo.jpg" class="timelineImage"  alt="Darpa Logo">  
+               <p>
+                Defense Advanced Research Project Agency(DARPA) asked MIT
+                to design a computer that could support multiple users at the 
+                same time. This was the start of modern day cloud services.</p> 
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>1969</h2>
+              <p>
+                <img src ="images/jcr.jpg" class="timelineImage" alt="J.C.R Lickider">
+                J.C.R Lickider a psychologist and computer scientist. Assisted DARPA in developing a primative 
+                version of the modern internet. This vision came to be called
+                the "Intergalatic Computer Network" by Lickider.</p>
+            </div>
+          </div>
+             <div class="container left">
+            <div class="content">
+              <h2>2002</h2>
+              <p><img src ="images/amazonImage.png" class="timelineImage" alt="Amazon Logo">
+                  Amazon launched their web based retail service. First major business to use only 10% of capacity as a problem to be solved. This was do to the Cloud Computing Infrastructure Model giving them the ability to use capicities of computers more effieiently</p>
+            </div>
+          </div>
+             <div class="container right">
+            <div class="content">
+              <h2>2006</h2>
+              <p><img src ="images/aws.png" class="timelineImage" alt="AWS logo">
+                Amazon launches Amazon web services(AWS). Which allowed other companies to purchase Cloud services like storage, computation, and even virtual computers.<br>
+                Google Launches Google Documents originaly called writely, and Google Sheets.</p>
+            </div>
+          </div>
+             <div class="container left">
+            <div class="content">
+              <h2>2007</h2>
+              <p><img src ="images/server.jpg" class="timelineImage" alt="Image of a Server Farm">
+                  Google, IBM, and Univeristies built server farms to assist with large scale projects. Project that required large pools of data, and fast processors. This lead to top college renting services from Google and IBM to expediate research projects.</p>
+            </div>
+          </div>
+            <div class="container right">
+            <div class="content">
+              <h2>2011</h2>
+              <p>
+                  <img src ="images/ibmCloud.jfif" class="timelineImage" alt="IBM SmartCLoud logo">
+                  IBM launches SmartCloud, their alternative to AWS. While Apple launched the ICloud which was more a storage system for users to store personal information. Mircosoft ramps up cloud services advertising to gain the interest of the public.</p>
+            </div>
+          </div>
+        </div>
+              </section>
+        <!--End of time line -->
+        </main>
+        
+        <footer class="foot"></footer>
+        
+    
+    </body>
+      <!-- js  -->
+      <script src="js/cloud.js"></script>
+      <script>
+          // squish links into hamburger when screen small
+          const burgerTime = () => {
+              var x = document.getElementById("myTopnav");
+                  if (x.className === "nav-links") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "nav-links";
+              }
+          }
+      </script>
+    
+
+
+</html>

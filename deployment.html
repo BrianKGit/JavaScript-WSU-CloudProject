@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="deployment models of cloud computing">
+    <meta name="keywords" content="cloud, cloud computing, deployment models, public, private, hybrid, multi-cloud">
+    <meta name="author" content="Chris Herold">
+
+    <title>Deployment</title>
+    
+    <!-- from jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- cloudflare uses their hamburger icon for navbar  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon -->
+    <link rel="icon" href="../images/cloud.ico"/>
+    <!-- css  -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="css/skipto.css">
+    <!-- js  -->
+    <!-- script at bottom  -->
+</head>
+
+<body>
+    <div class="skip-links" id="top">
+        <a href="#main-content">Skip to main content</a>
+        <a href="#contact">Skip to contact information</a>
+    </div>
+
+    <nav role="navigation">
+        <!-- rendered in cloud.js  -->
+        <noscript>Your browser's javascript is disabled. Please enable to load the navbar.</noscript>
+    </nav>
+
+    <main class="main-area" id="main-content" role="main">
+
+        <section class="info-container">
+            <div class="card">
+                <h3 class="card-title row">Deployment Models</h3>
+                <div class="card-contents">
+                    <img class="card-image" src="../images/deploystats.png" alt="Deployment statistics diagram"/>
+                    <p class="card-p">The deployment models of cloud computing are based on where the hardware is relative to the user. The types of deployments are Public, Private, Hybrid, and Multi-Cloud. Cloud models can differ greatly, and one company's deployment might look completely different than another's.</p>
+                </div>
+             </div>
+        </section>
+        <section class="info-container">
+            <div class="card">
+                <h3 class="card-title row">Public</h3>
+                <div class="card-contents">
+                    <img class="card-image" src="../images/public-cloud.png" alt="Public deployment model diagram"/>
+                    <p class="card-p">Public clouds are often run on shared resources as a service. Like Amazon's AWS, there are many different organizations using servers that are owned by Amazon. Although the hardware may be from the same place, the different organizations do not have access to each other's data. Some issues with this deployment model can include data ownership, security, and performance of a shared resource.</p>
+                </div>
+             </div>
+        </section>
+        <section class="info-container">
+            <div class="card">
+                <h3 class="card-title row">Private</h3>
+                <div class="card-contents">
+                    <img class="card-image" src="../images/private-cloud.png" alt="Privte deployment model diagram"/>
+                    <p class="card-p">Private clouds are usually run on an organization's own hardware. They can be very secure, and performance depends on the quality of the installed hardware and configuration. Private clouds can be expensive to build initially. Also they can be harder to scale early on than public clouds but there are many benefits to them in the long run.</p>
+                </div>
+             </div>
+        </section>
+        <section class="info-container">
+            <div class="card">
+                <h3 class="card-title row">Hybrid</h3>
+                <div class="card-contents">
+                    <img class="card-image" src="../images/hybrid.png" alt="Hybrid deployment model diagram"/>
+                    <p class="card-p">Hybrid clouds are a combination of public and private deployments. An organization may keep more sensative data held in the private cloud and then use the public cloud for less sensative or cpu intensive tasks that they do not have the resources for. This provides the benefits of being able to scale fast while building up a private cloud network.</p>
+                </div>
+             </div>
+        </section>
+        <section class="info-container">
+            <div class="card">
+                <h3 class="card-title row">Multi-Cloud</h3>
+                <div class="card-contents">
+                    <img class="card-image" src="../images/multi-cloud.png" alt="Multi-Cloud deployment model diagram"/>
+                    <p class="card-p">Multi-Clouds contain a combination of different cloud models that are not all interconnected. One example of this could be a company that has a private network for employee payroll and an unconnected hybrid network that provides services for an app they own.</p>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="foot" id="contact" role="contentinfo">
+        <!-- rendered in cloud.js  -->
+        <noscript>Your browser's javascript is disabled. Please enable to load the footer area.</noscript>
+    </footer>
+    <!-- js  -->
+    <script src="js/cloud.js"></script>
+</body>
+</html>

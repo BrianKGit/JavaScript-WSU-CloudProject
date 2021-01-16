@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="introduction to cloud computing">
+    <meta name="keywords" content="cloud computing, overview, welcome, what is cloud computing?">
+    <meta name="author" content="Chris Herold, Hunter Mahoney, Melissa Danielson, Brian Klein">
+    <title>Cloud Computing</title>
+
+    <!-- from jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- cloudflare uses their hamburger icon for navbar  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon -->
+    <link rel="icon" href="images/cloud.ico"/>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/image-banner.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/skipto.css">
+    <!-- js  -->
+    <!-- bottom of body  -->
+
+</head>
+<body>
+    <div class="skip-links" id="top">
+        <a href="#main-content">Skip to main content</a>
+        <a href="#suggestion-form">Skip to suggestion form</a>
+        <a href="#contact">Skip to contact information</a>
+    </div>
+
+    
+    <nav role="navigation">
+        <!-- rendered with cloud.js  indented version below-->
+        <noscript>Your browser's javascript is disabled. Please enable to load the navbar.</noscript>
+    </nav>
+
+    <main class="main-area" id="main-content" role="main">
+
+        <section class="info-container">
+            <div class="card">
+                <h3 class="card-title row">What is cloud computing?</h3>
+                <div class="card-contents">
+                    <img class="card-image" src="../images/home-cloud.png" alt="representation of a cloud service"/>
+                    <p class="card-p">Cloud computing simply means using the internet to access computer resources. A cloud can be scalable, flexible and cost-effective. The resources of the cloud can be accessed anywhere the network reaches rather than solely on your local device. Many businesses use a pay per month method and subscribe to a large cloud service company.</p>
+                </div>
+             </div>
+        </section>
+        
+
+        <!-- form for something to be decided  -->
+        <form action="" id="suggestion-form" class="cloud-form" method="post" role="form">
+            
+            <label class="form-label" aria-label="form title">Suggestions</label>
+            <br>
+            <!-- name  -->
+            <label FOR="form-name-input" class="input-description">Name</label>
+            <br>
+            <input id="form-name-input" type="text" class="form-input" name="formName" aria-label="name input" alt="name input">
+            <br>
+            <!-- email  -->
+            <label FOR="form-email-input" class="input-description">Email</label>
+            <br>
+            <input id="form-email-input" type="email" class="form-input" name="formEmail" aria-label="email input" alt="email input">
+            <br>
+            <!-- phone  -->
+            <label FOR="form-phone-input" class="input-description">Phone Number</label>
+            <br>
+            <input id="form-phone-input" type="tel" class="form-input" name="formPhone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" aria-label="phone input" alt="name input" alt="phone input">
+            <br>
+            <!-- radio buttons  -->
+            <label FOR="form-yesno-input" class="input-description" aria-label="radio button label">Did you find this page helpful?</label>
+            <div class="form-input">
+                
+                <p id="form-yesno-input">
+                    <input type="radio" class="radio-input" name="yes_no" checked aria-label="radio button yes" alt="yes selection">Yes</input>
+                    <input type="radio" class="radio-input" name="yes_no" aria-label="radio button no" alt="no selection">No</input>
+                </p>
+            </div>
+            <br>
+            <!-- text area  -->
+            <label FOR="form-comment-input" class="input-description">Comments</label>
+            <br>
+            <textarea id="form-comment-input" class="form-input" name="message" rows="10" cols="30" aria-label="comments input" alt="comment input"></textarea>
+            
+            <br>
+            <button type="submit" class="submit-button" aria-label="form submit button" alt="submit button">Submit</button>
+        </form>
+
+        <section class="image-container">
+            <div class="three-images container">
+                <a href="https://cloud.google.com/ " target="_blank">
+                    <img src="../images/google-logo.png" alt="logo for google cloud services" class="first-three">
+                </a>
+                <a href="https://aws.amazon.com/ " target="_blank">
+                    <img src="../images/aws-logo.png" alt="logo for amazon cloud services" class="second-three">
+                </a>
+                <a href="https://azure.microsoft.com/en-us/ " target="_blank">
+                    <img src="../images/azure-logo.png" alt="logo for azure from microsoft" class="third-three">
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="foot" id="contact" role="contentinfo">
+        <!-- rendered with cloud.js  indented version below-->  
+        <noscript>Your browser's javascript is disabled. Please enable to load the footer area.</noscript>      
+    </footer>
+   
+    <!-- js  -->
+    <script src="js/cloud.js"></script>
+</body>
+
+</html>

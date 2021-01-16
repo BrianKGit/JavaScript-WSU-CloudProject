@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+:root {
+    /* variables  */
+    --myBackColor: #33acaa;
+    --navTextColor: white;
+    --navButtonBackgroundColor: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: var(--myBackColor);
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+}
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 5;
+}
+.nav-links {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .nav-links a:first-child {
+    color: var(--navButtonBackgroundColor);
+    background-color: var(--navTextColor);
+    float: left;
+    margin: 4px 2px;
+  }
+  .nav-links a:not(:first-child) {
+    float: right;
+    border: solid 1px;
+    border-radius: 10px;
+    color: var(--navTextColor);
+    background-color: var(--navButtonBackgroundColor);
+    margin: 4px 10px;
+  }
+  .nav-links a {
+    display: block;
+    color: var(--navTextColor);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    background-color: var(--navTextColor);
+    color: var(--navButtonBackgroundColor);
+  }
+  
+  .nav-links a.active {
+    background-color: var(--navTextColor);
+    color: var(--navButtonBackgroundColor);
+  }
+  
+  .nav-links .icon {
+    display: none;
+    width: 25px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .nav-links a:not(:first-child) {display: none;}
+    .nav-links a.icon {
+      float: right;
+      display: block;
+      
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .nav-links.responsive {position: relative;}
+    .nav-links.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+/* 
+      background-color: var(--navTextColor); */
+      width: 25px;
+    }
+    .nav-links.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      border: none;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .nav-links a {
+        padding: 10px 5px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    
+
+}
+
+/* padded main area so it starts under nav bar  */
+.main-area {
+    margin-top: 55px;
+    margin-bottom: auto;
+}
